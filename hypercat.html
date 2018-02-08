@@ -1,0 +1,56 @@
+<!--
+
+  CityVerve - HyperCat Demo
+  http://developer.cityverve.org.uk
+  https://github.com/cityverve/hypercat-demo
+
+  Released under the MIT license
+  https://en.wikipedia.org/wiki/MIT_License
+
+  Copyright 2018 CityVerve
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>HyperCat Demo &raquo; CityVerve API</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="hypercat.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="hypercat.js"></script>
+  </head>
+  <body>
+    <h1>CityVerve API &raquo; HyperCat Demo</h1>
+    <small><a href="/showcase">back to the Portal</a></small>
+    <p>This demo is designed to show you some of the power of <a href="the-api#the_catalogue_api">The Catalogue</a>
+       within CityVerve. The Catalogue is based upon an open standard called HyperCat (formally called
+       <a href="https://www.bsigroup.com/en-GB/about-bsi/media-centre/press-releases/2016/july/Internet-of-Things-interoperability-specification-is-published/">BSI:PAS:212</a>).
+       This demo uses an interactive form which builds up a HyperCat request URL. It also lets you submit the
+       URL to see the types of responses that HyperCat sends back. Hopefully, after using with this demo,
+       you will understand how to make your own calls to The Catalogue from within your applications.</p>
+    <p>In this demo, as an example, we make calls to the <b>car-park</b> catalogue. Calls to the catalogues of all
+       the other <a href="the-data#entity_specific_properties">entity types</a> will be of exactly the same construction. Further, we only show a
+       sub-set of the properties of the car-park entity here and also only a subset of the types of querying you
+       can do on them using HyperCat.</p>
+    <form id="hypercat">
+      <pre id="url"></pre>
+      <select id="option">
+        <option value="0:0:all">the complete car-park catalogue</option>
+        <option value="1:0:name-eq">the car-park name equals [string]</option>
+        <option value="1:0:name-lex">the car-park name contains [string]</option>
+        <option value="1:0:capacity-eq">the car-park capacity equals [int]</option>
+        <option value="1:0:capacity-gt">the car-park capacity is greater than [int]</option>
+        <option value="1:0:occupancy-lt">the car-park occupancy is less than [int]</option>
+        <option value="1:1:occupancy-bt">the car-park occupancy is between [int] and [int]</option>
+        <option value="1:1:loc-geo">the car-park location is inside box [nw - lat,long] and [se - lat,long]</option>
+      </select>
+      <input id="param1" type="text" disabled />
+      <input id="param2" type="text" disabled />
+      <button type="button" id="call">Make the Call</button>
+      <label id="info"></label>
+      <pre id="cat"></pre>
+    </form>
+    <a href="https://github.com/cityverve/hypercat-demo"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-red@2x.png" alt="Fork me on GitHub"></a>
+  </body>
+</html>

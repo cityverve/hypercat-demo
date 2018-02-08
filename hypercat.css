@@ -1,0 +1,126 @@
+/*
+  CityVerve - HyperCat Demo
+  http://developer.cityverve.org.uk
+  https://github.com/cityverve/hypercat-demo
+
+  Released under the MIT license
+  https://en.wikipedia.org/wiki/MIT_License
+
+  Copyright 2018 CityVerve  */
+
+body
+{
+    font-family: Calibri, sans-serif;
+    font-size: 1em;
+    padding: 24px;
+    padding-top: 0;
+    width: 1000px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active
+{
+    color: #000080;
+}
+
+::placeholder
+{
+    color:#999;
+}
+
+#hypercat
+{
+    font-size: 1.1em;
+    background: #ccccb3;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 15px 15px rgba(0,0,0,0.2);
+    box-sizing: border-box;
+}
+
+#url
+{
+    padding: 12px 10px;
+    white-space: normal;
+    width: 100%;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+#url,
+#cat
+{
+    background: #333;
+    color: #98fb98;
+}
+
+#option,
+#param1,
+#param2
+{
+    font-size: 0.9em;
+    background: #fff;
+    padding:6px;
+}
+
+#param1:disabled,
+#param2:disabled
+{
+    background: #ddd;
+}
+
+#option
+{
+    width: 50%;
+}
+
+#param1,
+#param2
+{
+    width: 22%;
+    margin-left: 7px;
+}
+
+#call
+{
+    font-size: 0.9em;
+    padding: 5px;
+    margin: 15px 0px;
+    width: 15%;
+}
+
+#cat
+{
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 100%;
+    height: 600px;
+    padding: 10px;
+    margin: 2px 0px 10px 0px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+#info
+{
+    margin-left: 12px;
+}
+
+.json-key
+{
+    color: #ffff66;
+}
+
+.json-value
+{
+    color: #ff9380;
+}
+
+.json-string
+{
+    color: #91ede4;
+}
