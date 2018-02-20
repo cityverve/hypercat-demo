@@ -1,6 +1,6 @@
 /*
   CityVerve - HyperCat Demo
-  http://developer.cityverve.org.uk
+  https://developer.cityverve.org.uk
   https://github.com/cityverve/hypercat-demo
 
   Released under the MIT license
@@ -12,7 +12,7 @@
 
 const MANCHESTER   = { nw: { lat: 53.54482, lng: -2.37739 },    // top left  = Kearsley Station
                        se: { lat: 53.42681, lng: -2.14073 } };  // bot right = Romiley Station
-const API_ENDPOINT = 'http://api.cityverve.org.uk/v1/cat/car-park';
+const API_ENDPOINT = 'https://api.cityverve.org.uk/v1/cat/car-park';
 const API_KEY      = 'YOUR-KEY-HERE';  // cityverve api key
 const WAIT         = ['Nearly there', 'Hold your horses', 'Tick Tock', 'Hang on a mo\'', 'Look away'];  // just a bit of fun
 const MAIN_PROMPT  = 'Select an action, complete it\'s parameters and then click the \'Make the Call\' button';
